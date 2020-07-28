@@ -1,63 +1,62 @@
-/* Change .navbar-brand color and background-color */
-
-.navbar-brand {
-    background-color: lightseagreen;
-    /* Set color change to !important as .navbar overrides */
-    color: white !important;
-    font-weight: bolder;
-    margin-left: 20px;
-}
-
-
-/* Set background color of all pages */
-
-body,
-html {
-    height: 100%;
-    background-color: grey;
-}
-
-
-/* Style heading of all .card-titles */
-
-.card-title {
-    color: lightseagreen;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bolder;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-    padding-left: 20px;
-    border-bottom: 1px solid lightseagreen;
-}
-
-
-/* For index.html, create space between picture and text */
-
-.float-left {
-    margin: 10px;
-}
-
-
-/* For contact.html, target <form> element for spacing within card and change button to square with new background-color*/
-
-.container form {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-}
-
-.btn {
-    border-radius: 0 !important;
-    background-color: lightseagreen;
-}
-
-
-/* For portfolio.html, add margin spacing to <img> */
-
-.container img {
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
+                    /* Change .navbar-brand color and background-color */
+                
+                .navbar-brand {
+                    background-color: lightseagreen;
+                    /* Set color change to !important as .navbar overrides */
+                    color: white !important;
+                    font-weight: bolder;
+                    margin-left: 20px;
+                }
+                /* Set background color of all pages */
+                
+                body {
+                    height: 100%;
+                    background-color: grey;
+                }
+                /* Style heading of all .card-titles */
+                
+                .card-title {
+                    color: lightseagreen;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-weight: bolder;
+                    padding-top: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 0px;
+                    padding-left: 20px;
+                    border-bottom: 1px solid lightseagreen;
+                }
+                /* For index.html, align top of picture with text and create space between picture and text */
+                
+                .container .float-left {
+                    padding-top: 5px;
+                    margin-right: 10px;
+                }
+                /* For contact.html, target <form> element for spacing within card and change button to square with new background-color*/
+                
+                .container form {
+                    margin-right: 30px;
+                    margin-bottom: 30px;
+                    margin-left: 30px;
+                }
+                
+                .btn {
+                    border-radius: 0 !important;
+                    background-color: lightseagreen;
+                }
+                /* For portfolio.html, add margin spacing to <img> */
+                
+                .container img {
+                    margin-top: 20px;
+                    margin-right: 30px;
+                    margin-bottom: 20px;
+                    margin-left: 20px;
+                }
+                
+                @media screen and (max-width: 450px) {
+                    /* Remove right and left margins for certain small screens to avoid image overflow */
+                    .container img {
+                        margin-top: 20px;
+                        margin-right: 0px;
+                        margin-bottom: 20px;
+                        margin-left: 0px;
+                    }
