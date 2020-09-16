@@ -6,8 +6,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Google Font -->
+    <!-- <link
+        href='//fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'> -->
+
+    <!-- FontAwesome JS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./site-assets/styles.css">
 
@@ -17,24 +28,25 @@
 <body>
     <header>
         <!-- Add standard light navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">James Howard</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <!-- Add navbar toggler -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button>
             <!-- Assign .collapse class to toggler content and link #id to toggler #id-->
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <!-- Add .ml-auto class to push right -->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                <ul class="social-list list-inline ml-auto">
+                    <li class="list-inline-item"><a class="text-black" href="https://twitter.com/atxbusinessatty"><i
+                                class="fab fa-twitter fa-fw"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <li class="list-inline-item"><a class="text-black"
+                            href="https://www.linkedin.com/in/james-howard-78247a14/"><i
+                                class="fab fa-linkedin-in fa-fw"></i></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><strong>About</strong></a>
+                    <li class="list-inline-item"><a class="text-black" href="https://github.com/jth2698"><i
+                                class="fab fa-github-alt fa-fw"></i></a>
                     </li>
                 </ul>
             </div>
@@ -47,53 +59,123 @@
 
     <!-- Page content -->
     <section>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="card">
-                        <div class="container">
-                            <h1 class="card-title">About Me</h1>
-                        </div>
-                        <div class="container">
-                            <img class="img-fluid float-left about-me-img" src="./site-assets/site-images/rome.jpg" alt="James looking pensive">
-                            <p class=" card-body ">
-                                As a business lawyer, James is often too serious about himself and others. He often refers to himself in the third person, particularly when writing. The important things about him are this: he is from Louisiana and is therefore not to be trusted; he
-                                is a lawyer which should deepen suspicion; he is learning web and app development, so there is at least one redeeming factor.
-                            </p>
-                            <p class="card-body ">
-                                James is fascinated by politics, business, and the operation of our crazy, modern world. He hopes to develop web apps that might one day change the world, or at least make a modest return.
-                            </p>
-                            <div class="float-right">
-                                <p class="card-body">
-                                    You can connect with James on:</p>
-                                <ul>
-                                    <li><a href="https://www.linkedin.com/in/james-howard-78247a14/">LinkedIn</a>;</li>
-                                    <li> <a href="https://twitter.com/atxbusinessatty ">Twitter</a>; or (most importantly)</li>
-                                    <li> <a href="https://github.com/jth2698 "> Github</a>. </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <img src="./site-assets/site-images/easy-tiger-jacket-crop.jpg" alt="James putting on suit jacket"
+                        class="img-thumbnail">
+                </div>
+                <div class="col-md-4 text-center">
+                    <br>
+                    <h4>Hi, I'm</h4>
+                    <h2 class="text-uppercase">James Howard,</h2>
+                    <p>lawyer and full-stack developer*.</p>
+                    <p class="mt-n3 small text-muted">*in progress</p>
+                    <div>
+                        <a href="./site-assets/resume.pdf">
+                            <h5 class="text-uppercase">Resume</h5>
+                        </a>
+                        <a href="./site-assets/resume.pdf">
+                            <img src="./site-assets/site-images/resume-screenshot.jpg" alt="James' resume. Click here."
+                                class="img-thumbnail">
+                        </a>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
+
+    <br>
+
+    <section>
+        <div class="container">
+            <h2 class="border-bottom text-uppercase">Overview</h2>
+            <div class=card>
+                <div class="card-body bg-secondary text-white">
+                    <h5 class="card-title">Lawyer. Developer.</h5>
+                    <p class="card-text ">
+                        After graduating from Baylor Law School in 2011, James started his career as a trial lawyer, but
+                        eventually transistioned to a business practice focused on the telecommunications, technology,
+                        and
+                        financial service industries. After counseling clients on technology transactions for nearly a
+                        decade,
+                        James developed a passion for technology in general and programming in particular. While
+                        currently a
+                        partner in a large Austin, TX law firm, James is also working towards a UT certification in
+                        full-stack
+                        web development.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <br>
+
+    <section>
+        <div class="container">
+            <h2 class="border-bottom text-uppercase">Featured Development Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="https://github.com/jth2698/work-day-scheduler">
+                            <img class="card-img-top" src="./site-assets/site-images/wds-crop.jpg"
+                                alt="Work Day Scheduler screenshot">
+                        </a>
+                        <div class="card-body bg-secondary text-white">
+                            A simple calendar application.
+                            This app runs in the browser and features dynamically updated HTML and CSS powered by
+                            jQuery.</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="https://github.com/jth2698/weather-dashboard">
+                            <img class="card-img-top" src="./site-assets/site-images/weather-dashboard-crop.jpg"
+                                alt="Weather Dashboard screenshot">
+                        </a>
+                        <div class="card-body bg-secondary text-white">
+                            A simple weather app with a responsive background approximating the user's current
+                            conditions, current weather conditions, and a 5 day forecast.</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="https://github.com/jth2698/bootcamp-project-1">
+                            <img class="card-img-top" src="./site-assets/site-images/cheapcheap-crop.jpg"
+                                alt="Cheap Cheap screenshot">
+                        </a>
+                        <div class="card-body bg-secondary text-white">
+                            A simple local eletronics product finder built with a team using Javascript ES6 and
+                            leveraging Google Maps and the Best Buy
+                            API.</div>
+                    </div>
+                </div>
+    </section>
+
 
     <!-- Break for footer -->
 
     <br>
 
     <footer>
-        <nav class="navbar fixed-bottom navbar-light bg-light ">
+        <nav class="navbar sticky-bottom navbar-light bg-light ">
             <p class="mx-auto ">&#169;James Howard</p>
         </nav>
     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+        crossorigin="anonymous "></script>
 
 </body>
 
