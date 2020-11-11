@@ -6,11 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Google Font -->
-    <!-- <link
-        href='//fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
-        rel='stylesheet' type='text/css'> -->
-
     <!-- FontAwesome JS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
@@ -26,39 +21,29 @@
 </head>
 
 <body>
+
+    <!-- Header / Navbar -->
     <header>
         <!-- Add standard light navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <!-- Add navbar toggler -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Assign .collapse class to toggler content and link #id to toggler #id-->
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <!-- Navbar names -->
+            <h3 class="pl-5 text-white">James Howard</h3>
+            <div class="ml-auto pt-3 pr-5 font-weight-bold">
                 <!-- Add .ml-auto class to push right -->
-                <ul class="social-list list-inline ml-auto">
-                    <li class="list-inline-item"><a class="text-black" href="https://twitter.com/atxbusinessatty"><i
-                                class="fab fa-twitter fa-fw"></i></a>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a class="text-black" href="#Overview">
+                            Overview
+                        </a>
                     </li>
-                    <li class="list-inline-item"><a class="text-black"
-                            href="https://www.linkedin.com/in/james-howard-78247a14/"><i
-                                class="fab fa-linkedin-in fa-fw"></i></a>
-                    </li>
-                    <li class="list-inline-item"><a class="text-black" href="https://github.com/jth2698"><i
-                                class="fab fa-github-alt fa-fw"></i></a>
+                    <li class="list-inline-item"><a class="text-black" href="#Projects">Projects</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Break for page content -->
-
-    <br>
-
-    <!-- Page content -->
-    <section>
+    <!-- Profile picture and intro / resume text and social links -->
+    <section class="pt-5 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -72,26 +57,38 @@
                     <p>lawyer and full-stack developer*.</p>
                     <p class="mt-n3 small text-muted">*in progress</p>
                     <div>
-                        <a href="./site-assets/resume.pdf">
+                        <a href="./site-assets/resume.pdf" target="_blank">
                             <h5 class="text-uppercase">Resume</h5>
                         </a>
                         <a href="./site-assets/resume.pdf">
-                            <img src="./site-assets/site-images/resume-screenshot.jpg" alt="James' resume. Click here."
-                                class="img-thumbnail">
+                            <img src="./site-assets/site-images/resume-screenshot.jpg" target="_blank"
+                                alt="James' resume. Click here." class="img-thumbnail">
                         </a>
-                        </a>
+                    </div>
+                    <div class="pt-3">
+                        <ul class="social-list list-inline ml-auto">
+                            <li class="list-inline-item"><a class="text-black"
+                                    href="https://twitter.com/atxbusinessatty" target="_blank"><i
+                                        class="fab fa-twitter fa-lg"></i></a>
+                            </li>
+                            <li class="list-inline-item"><a class="text-black"
+                                    href="https://www.linkedin.com/in/james-howard-78247a14/" target="_blank"><i
+                                        class="fab fa-linkedin-in fa-lg"></i></a>
+                            </li>
+                            <li class="list-inline-item"><a class="text-black" href="https://github.com/jth2698"
+                                    target="_blank"><i class="fab fa-github-alt fa-lg"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
-    <br>
-
-    <section>
+    <!-- Overview section -->
+    <section class="pt-5 pb-5" id="Overview">
         <div class="container">
-            <h2 class="border-bottom text-uppercase">Overview</h2>
+            <h2 class="border-bottom text-uppercase pb-3">Overview</h2>
             <div class=card>
                 <div class="card-body bg-secondary text-white">
                     <h5 class="card-title">Lawyer. Developer.</h5>
@@ -111,69 +108,92 @@
             </div>
     </section>
 
-    <br>
+    <!-- Project cards -->
 
-    <section>
+    <!-- Introduction -->
+    <section class="pt-5 pb-5" id="Projects">
         <div class="container">
-            <h2 class="border-bottom text-uppercase">Featured Development Projects</h2>
-            <div class="row">
-                <div class="col-md-4">
+            <h2 class=" pb-3 border-bottom text-uppercase"> Projects</h2>
+
+            <!-- Cards -->
+            <div class="row row-cols-1 row-cols-md-2">
+
+                <!-- Weather Dashboard -->
+                <div class="col mb-4">
                     <div class="card">
-                        <a href="https://github.com/jth2698/work-day-scheduler">
-                            <img class="card-img-top" src="./site-assets/site-images/wds-crop.jpg"
-                                alt="Work Day Scheduler screenshot">
-                        </a>
-                        <div class="card-body bg-secondary text-white">
-                            A simple calendar application.
-                            This app runs in the browser and features dynamically updated HTML and CSS powered by
-                            jQuery.</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <a href="https://github.com/jth2698/weather-dashboard">
-                            <img class="card-img-top" src="./site-assets/site-images/weather-dashboard-crop.jpg"
+                        <div class="card-header">
+                            <h6>Weather Dashboard</h6>
+                        </div>
+                        <a href="https://jth2698.github.io/weather-dashboard/" target="_blank">
+                            <img class="card-img-top" src="./site-assets/site-images/weather-dashboard.jpg"
                                 alt="Weather Dashboard screenshot">
                         </a>
-                        <div class="card-body bg-secondary text-white">
+                        <div class="project card-body bg-secondary text-white">
                             A simple weather app with a responsive background approximating the user's current
                             conditions, current weather conditions, and a 5 day forecast.</div>
+                        <a href="https://github.com/jth2698/weather-dashboard" class="btn btn-dark">View Code</a>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <!-- Cheap Cheap -->
+                <div class="col mb-4">
                     <div class="card">
-                        <a href="https://github.com/jth2698/bootcamp-project-1">
-                            <img class="card-img-top" src="./site-assets/site-images/cheapcheap-crop.jpg"
+                        <div class="card-header">
+                            <h6>Cheap Cheap</h6>
+                        </div>
+                        <a href="https://jth2698.github.io/bootcamp-project-1/" target="_blank">
+                            <img class="card-img-top" src="./site-assets/site-images/cheap-cheap.jpg"
                                 alt="Cheap Cheap screenshot">
                         </a>
-                        <div class="card-body bg-secondary text-white">
+                        <div class="project card-body bg-secondary text-white">
                             A simple local eletronics product finder built with a team using Javascript ES6 and
-                            leveraging Google Maps and the Best Buy
-                            API.</div>
+                            leveraging the Google Maps and the Best Buy
+                            APIs.</div>
+                        <a href="https://github.com/jth2698/bootcamp-project-1" class="btn btn-dark">View Code</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <a href="https://github.com/jth2698/eat-da-burger">
-                                <img class="card-img-top" src="./site-assets/site-images/eat-da-burger-200 x 200.jpg"
-                                    alt="Eat-Da-Burger screenshot">
-                            </a>
-                            <div class="card-body bg-secondary text-white">
-                                A simple web-deployed application.
-                                This app was built in "MVC" format and allows users to manipulate content through use of
-                                a MySQL database.</div>
+
+                <!-- Eat-Da-Burger -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h6>Eat-Da-Burger</h6>
                         </div>
+                        <a href="https://sheltered-castle-29569.herokuapp.com/" target="_blank">
+                            <img class="card-img-top" src="./site-assets/site-images/eat-da-burger.jpg"
+                                alt="Eat-Da-Burger screenshot">
+                        </a>
+                        <div class="project card-body bg-secondary text-white">
+                            A simple web-deployed application.
+                            This app was built in "MVC" format and allows users to manipulate content through use of
+                            a MySQL database.</div>
+                        <a href="https://github.com/jth2698/eat-da-burger" class="btn btn-dark">View Code</a>
                     </div>
                 </div>
+
+                <!-- Docket Master -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h6>Docket Master</h6>
+                        </div>
+                        <a href="https://pure-atoll-36836.herokuapp.com/" target="_blank">
+                            <img class="card-img-top" src="./site-assets/site-images/docket-master.jpg"
+                                alt="Eat-Da-Burger screenshot">
+                        </a>
+                        <div class="project card-body bg-secondary text-white">
+                            A full-stack web-deployed application.
+                            This app was built with a team using MySQL and Sequelize and provides users witha
+                            fully-functioning
+                            court docketing system.</div>
+                        <a href="https://github.com/jth2698/Docket_Master" class="btn btn-dark">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-
-    <!-- Break for footer -->
-
-    <br>
-
-    <footer>
+    <footer class="pt-5 pb-5">
         <nav class="navbar sticky-bottom navbar-light bg-light ">
             <p class="mx-auto ">&#169;James Howard</p>
         </nav>
